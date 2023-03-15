@@ -1,0 +1,215 @@
+body{
+    background-image:url(https://bigthink.com/wp-content/uploads/2022/03/AdobeStock_389328016_Editorial_Use_Only.jpeg?lb=1536,864);
+    background-size:cover;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.parent{
+    display:grid;
+    place-items:center;
+    height:98vh;
+}
+.parent img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    margin-right:15px;
+}
+.container{
+    width: 1000px;
+    height: 700px;
+    background:linear-gradient(135deg , rgba(255 , 255 , 255 , .1) , rgba(255 , 255 , 255 , 0 ));
+    backdrop-filter:blur(10px);
+    box-shadow:4px 5px 11px #0000005e;
+    border-radius:10px;
+    display:flex;
+    overflow:hidden;
+    
+}
+.container .abdullah{
+    width:40%;
+    padding:20px 0;
+    border-right:1px solid #64646475;
+    background-color:white;
+}
+.container .abdullah .ali{
+    border-bottom: 1px solid #64646475;
+    width: calc(100% - 100px);
+    position: relative;
+    padding: 20px 0;
+    justify-content: center;
+    display: grid;
+    padding: 20px 50px 30px;
+}
+.container .abdullah .ali input{
+    background-color:#bfbfbfb3;
+    border: none;
+    outline: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 40px;
+    margin-right:15px;
+    padding:0 20px;
+}
+.container .abdullah .ali input::placeholder{
+    font-weight:bold;
+    font-size:15px;
+}
+.container .abdullah .ali:before{
+    content: '\f044';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 307px;
+    color: white;
+    background-color: #00b0ff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-62%);
+}
+.container .sameh{
+    width:60%;
+    background-color:white;
+}
+.container .abdullah .chat .mo{
+    display: flex;
+    align-items: center;
+    margin-bottom:0;
+    padding: 7px 40px 0;
+}
+.container .abdullah .chat .mo:not(:last-child){
+
+}
+.container .abdullah .chat{
+}
+.container .abdullah .chat .mo .info p{
+    margin: 7px 5px 0 0;
+}
+.container .abdullah .chat .mo .info{
+    flex:1;
+    padding:0 10px 0;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.container .abdullah .chat .mo:last-of-type{
+    background-color:#00b0ff;
+}
+.hosny{
+    display: flex;
+    align-items: center;
+    margin-bottom:0;
+    width:100%;
+}
+.container .abdullah .chat .mo .hosny{
+    border-bottom: 1px solid #64646475;
+    padding-bottom:18px;
+}
+.sameh{
+    display:flex;
+    flex-direction:column;
+}
+
+.sameh .head{
+    padding:15px 20px;
+    background-color:#e5e5e5;
+}
+.sameh .head span:nth-child(1){
+    color: grey;
+}
+.sameh .con{
+    padding:200px 30px 30px 30px;
+    flex:1;
+}
+.time{
+    position:relative;
+
+}
+.time span{
+    background-color:white;
+    width:fit-content;
+    display:block;
+    margin: 0 auto;
+    padding:10px;   
+}
+.time span::before{
+    content:'';
+    position:absolute;
+    top:18px;
+    left:0;
+    height:2px;
+    width:100%;
+    background-color:#f3f3f3;
+    width:190px;
+}
+.time span::after{
+    content:'';
+    position:absolute;
+    top:18px;
+    left:350px;
+    height:2px;
+    width:100%;
+    background-color:#f3f3f3;
+    width:190px;
+}
+.message p{
+    width:fit-content;
+    padding:10px;
+    border-radius:6px;
+}
+.message p:not(:nth-child(3) , :nth-child(4)){
+    background-color:#00b0ff;
+    position:relative;
+}
+.message p:not(:nth-child(3) , :nth-child(4))::before{
+    content: '';
+    left: -14px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-color: transparent #00b0ff transparent transparent;
+    border-width: 7px;
+    border-style: solid;
+    position: absolute;
+    transform:translateY(-50%);
+}
+.message p:nth-child(3),
+.message p:nth-child(4){
+    margin-left:auto;
+    background-color:#eceff1;
+    position:relative;    
+}
+.message p:nth-child(3)::before , :nth-child(4)::before{
+    content: '';
+    right: -13px;
+    top: 50%;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent transparent #eceff1;
+    border-width: 7px;
+    border-style: solid;
+    position: absolute;
+    transform:translateY(-50%);
+}
+.mo::before{
+    display:none;
+}
+.bar{
+    background-color:#eceff1;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+}
+.bar i{
+    color:#bdbdbd;
+}
+.bar i:nth-child(1){
+    flex:1;
+}
+.bar i:nth-child(2){
+    margin-right:8px;
+}
